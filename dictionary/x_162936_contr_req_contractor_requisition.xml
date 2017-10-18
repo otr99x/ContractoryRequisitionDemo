@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" extends="task" label="Contractor Requisition" max_length="40" name="x_162936_contr_req_contractor_requisition" type="collection">
+        <element label="Target End Date" max_length="40" name="end_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Key Hiring/Evaluation Criteria &amp; Mandatory Qualifications" max_length="10000" name="eval_criteria" type="string"/>
+        <element label="Extension Duration (Month)" max_length="40" name="extension_duration" type="integer"/>
+        <element label="Extension Possible?" max_length="40" name="extension_possible" type="boolean"/>
+        <element label="Flexible on Rate" max_length="40" name="flexible_rate" type="boolean"/>
+        <element label="Flexible on Start Date?" max_length="40" name="flexible_start" type="boolean"/>
+        <element label="is OPEX" max_length="40" name="is_opex" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Job Title" max_length="40" name="job_title" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Level" max_length="40" name="level" type="string"/>
+        <element attributes="omit_sys_original=true" default="0" label="Maximum Accepted Rate" max_length="20" name="max_rate" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" label="Nice to Have Skills/Experience" max_length="10000" name="nice_skills" type="string"/>
+        <element default="1" label="Number of Openings" max_length="40" name="num_openings" type="integer"/>
+        <element label="Reports To" max_length="32" name="reports_to" reference="sys_user" type="reference"/>
+        <element label="Resume Submissions Due Date" max_length="40" name="resume_due_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Scope of Work" max_length="10000" name="scope_of_work" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Technical Skills/Business Knowledge Needed" max_length="10000" name="skills" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Skills and Responsibilities" max_length="10000" name="skills_responsibility" type="string"/>
+        <element label="Target Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element attributes="omit_sys_original=true" label="Target Rate" max_length="20" name="target_rate" type="currency"/>
+        <element label="Timesheet Approval" max_length="32" name="timesheet_approval" reference="sys_user" type="reference"/>
+    </element>
+</database>

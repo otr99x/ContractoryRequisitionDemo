@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Detail of Position" max_length="40" name="x_162936_contr_req_approval_for_position" type="collection">
+        <element label="AFE Number" max_length="40" name="afe_number" type="string"/>
+        <element label="Contract End Date" max_length="40" name="contract_end_date" type="glide_date"/>
+        <element label="Contract Start Date" max_length="40" name="contract_start_date" type="glide_date"/>
+        <element label="Cost Center" max_length="40" name="cost_center" type="string"/>
+        <element label="Current Rate" max_length="20" name="current_rate" type="currency"/>
+        <element choice="1" label="Experience" max_length="40" name="experience" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Hiring Activity" max_length="40" name="hiring_activity" type="choice">
+            <choice/>
+        </element>
+        <element label="Hiring Lead" max_length="32" name="hiring_lead" reference="sys_user" type="reference"/>
+        <element label="Hiring Position Title" max_length="40" name="hiring_position_title" type="string"/>
+        <element label="Incumbent Name" max_length="32" name="incumbent_name" reference="sys_user" type="reference"/>
+        <element label="Job Function" max_length="40" name="job_function" type="string"/>
+        <element label="New Rate" max_length="20" name="new_rate" type="currency"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Office Location" max_length="32" name="office_location" reference="cmn_location" type="reference"/>
+        <element label="Project" max_length="40" name="project" type="string"/>
+        <element label="Rehire" max_length="40" name="rehire" type="boolean"/>
+        <element label="Reporting To" max_length="32" name="reporting_to" reference="sys_user" type="reference"/>
+        <element label="Request Date" max_length="40" name="request_date" type="glide_date"/>
+        <element label="Responsibilities Description" max_length="4000" name="responsibilities_description" type="string"/>
+        <element choice="1" label="Sex" max_length="40" name="sex" type="choice">
+            <choice/>
+        </element>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice/>
+        </element>
+        <element label="Team Lead" max_length="32" name="team_lead" reference="sys_user" type="reference"/>
+        <element label="Team Name" max_length="40" name="team_name" type="string"/>
+        <element label="Vendor" max_length="32" name="vendor" reference="core_company" type="reference"/>
+        <index name="index">
+            <element name="hiring_lead"/>
+        </index>
+        <index name="index2">
+            <element name="incumbent_name"/>
+        </index>
+        <index name="index3">
+            <element name="vendor"/>
+        </index>
+        <index name="index4">
+            <element name="office_location"/>
+        </index>
+        <index name="index5">
+            <element name="reporting_to"/>
+        </index>
+        <index name="index6">
+            <element name="team_lead"/>
+        </index>
+    </element>
+</database>
