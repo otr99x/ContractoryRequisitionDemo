@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_email">
+    <sys_script_email action="INSERT_OR_UPDATE">
+        <name>FormatContractDateRange</name>
+        <new_lines_to_html>false</new_lines_to_html>
+        <script><![CDATA[(function runMailScript(/* GlideRecord */ current, /* TemplatePrinter */ template,
+          /* Optional EmailOutbound */ email, /* Optional GlideRecord */ email_action,
+          /* Optional GlideRecord */ event) {
+
+	var startDate = current.start_date; //.getByFormat("dd-MM-yyyy");
+	var endDate = current.end_date;
+	//var diff = endDate.getDate() - startDate.getDate();
+	var diff = endDate - startDate;
+	
+	//var startMonth = startDate.getMonthy();
+	//var startDay = startDate.getDate(); 
+	//var startYear = startDate.getFullYear(); 
+
+	var duration;
+	switch (true) {
+		case diff < 32:
+			duration = " days";
+			break;
+		default:
+			duration = " months";
+	}
+
+	// Print to the Message field on a notification 
+	template.print(diff + duration + " (" + startDate + " - " + endDate + ")");
+
+})(current, template, email, email_action, event);]]></script>
+        <sys_class_name>sys_script_email</sys_class_name>
+        <sys_created_by>kmeier1</sys_created_by>
+        <sys_created_on>2017-10-27 17:06:28</sys_created_on>
+        <sys_id>5b5af7754f8a030035687bb28110c7cb</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>FormatContractDateRange</sys_name>
+        <sys_package display_value="Contractor Requisition" source="x_162936_contr_req">3105d83a4ffd030035687bb28110c7fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contractor Requisition">3105d83a4ffd030035687bb28110c7fe</sys_scope>
+        <sys_update_name>sys_script_email_5b5af7754f8a030035687bb28110c7cb</sys_update_name>
+        <sys_updated_by>kmeier1</sys_updated_by>
+        <sys_updated_on>2017-10-27 17:46:28</sys_updated_on>
+    </sys_script_email>
+</record_update>

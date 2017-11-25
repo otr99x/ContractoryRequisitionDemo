@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="" label="Imp Tmpl X 162936 Contr Req Pay Rate" language="en" table="u_imp_tmpl_x_162936_contr_req_pay_rate">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element/>
+            <help/>
+            <hint/>
+            <label>Imp Tmpl X 162936 Contr Req Pay Rate</label>
+            <language>en</language>
+            <name>u_imp_tmpl_x_162936_contr_req_pay_rate</name>
+            <plural>Imp Tmpl X 162936 Contr Req Pay Rates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Jamie.Turner</sys_created_by>
+            <sys_created_on>2017-10-26 17:40:30</sys_created_on>
+            <sys_id>0079b6214f42030035687bb28110c781</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Imp Tmpl X 162936 Contr Req Pay Rate</sys_name>
+            <sys_package display_value="Contractor Requisition" source="x_162936_contr_req">3105d83a4ffd030035687bb28110c7fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Contractor Requisition">3105d83a4ffd030035687bb28110c7fe</sys_scope>
+            <sys_update_name>sys_documentation_u_imp_tmpl_x_162936_contr_req_pay_rate__en</sys_update_name>
+            <sys_updated_by>Jamie.Turner</sys_updated_by>
+            <sys_updated_on>2017-10-26 17:40:30</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

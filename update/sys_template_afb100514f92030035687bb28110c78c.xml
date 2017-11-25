@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_template">
+    <sys_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <global>true</global>
+        <group/>
+        <link_element/>
+        <name>Business Analyst - Junior - Contractor</name>
+        <next/>
+        <next_child/>
+        <roles/>
+        <short_description>Job Specific for a junior BA - Contractor</short_description>
+        <show_on_template_bar>true</show_on_template_bar>
+        <stand_alone>false</stand_alone>
+        <sys_class_name>sys_template</sys_class_name>
+        <sys_created_by>kmeier1</sys_created_by>
+        <sys_created_on>2017-11-06 19:57:26</sys_created_on>
+        <sys_id>afb100514f92030035687bb28110c78c</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Business Analyst - Junior - Contractor</sys_name>
+        <sys_package display_value="Contractor Requisition" source="x_162936_contr_req">3105d83a4ffd030035687bb28110c7fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contractor Requisition">3105d83a4ffd030035687bb28110c7fe</sys_scope>
+        <sys_update_name>sys_template_afb100514f92030035687bb28110c78c</sys_update_name>
+        <sys_updated_by>kmeier1</sys_updated_by>
+        <sys_updated_on>2017-11-06 20:28:51</sys_updated_on>
+        <table>x_162936_contr_req_contractor_requisition</table>
+        <template>scope_of_work=The perform business analysis under the watchful eye of a senior business analyst. The team will be implementing the following functions:&#13;
+•	Core Human Capital Management &#13;
+•	Recruiting&#13;
+•	Talent and performance management &#13;
+•	Manager and employee self-service &#13;
+&#13;
+The project team will be leveraging Workday best practices to define new processes as required. The Organizational Change Management (OCM) Advisor will report to the Project Manager and will define the change management, engagement, communication and training strategy and develop detailed plans to deliver the strategy.&#13;
+^skills_responsibility=•	Clearly defining and articulating Project Objectives;&#13;
+•	Develop a comprehensive change plan and then manage the execution of that plan across the Sponsorship framework; &#13;
+•	Develop measurement approach to report on how effectively the organization is progressing through change; &#13;
+•	Work with the project team and consult with Learning Services to define training needs and recommend creative delivery options that align to the overall engagement; strategy;&#13;
+•	Work with the Project Manager to determine the training plan and resource requirements&#13;
+^eval_criteria=•	1+ years Change Management experience; &#13;
+•	Possess expert organization change management/change leadership skills and hands-on experience; &#13;
+•	Excellent communication skills including verbal and written communication, facilitation; &#13;
+•	Comfortable with technology with the ability to demonstrate user functionality, features and benefits to user groups; &#13;
+•	Possess strong organizational and analytical skills including systems thinking, problem solving and decision-making; &#13;
+•	Energetic and results oriented; &#13;
+•	Experience with HR Systems; Workday implementation experience will be preferred; &#13;
+•	Exhibits proficient knowledge of business standards and human resource function and processes; Experience working in HR is desired; &#13;
+•	Experience working in Oil &amp; Gas industry; &#13;
+•	Resource should be innovative, collaborative, and bring a high level of energy to the role^skills=•	Agility – Fast learner of new skills and information, Open minded and pragmatic, Adaptable and change ready, Flexible; &#13;
+•	Organizational Skills – Manages tasks, time and priorities, Ability to multi-task across projects; &#13;
+•	Creativity – Thinks innovatively and outside of the box; &#13;
+•	Resilience – Manages stress, open to constructive feedback, recovers quickly from difficulties; &#13;
+•	Risk Management - Identifies, analyses, mitigates,  and monitors risks; &#13;
+•	Courage – Uses straight talk, has crucial conversations, offers and receives constructive feedback, steps up to the plate; &#13;
+•	Understanding of transition to operations best practices;&#13;
+•	Adaptability and flexibility in handling multiple planned and unplanned responsibilities, as well as competing priorities;&#13;
+•	Critical thinking and problem solving skills;&#13;
+•	Decision making in a fast paced environment;&#13;
+•	Self-starter, ability to work independently ; and, &#13;
+•	Leverage the skills and knowledge of the individuals around them.^nice_skills=•	Ability to make great ice cream cones^job_type=contractor^EQ</template>
+        <user display_value="Kevin Meier">79aeedb24ff1430035687bb28110c77c</user>
+        <view/>
+    </sys_template>
+</record_update>

@@ -15,7 +15,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Incumbent Name</column_label>
+        <column_label>Legal Name</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -53,14 +53,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2017-10-17 20:55:30</sys_created_on>
         <sys_id>979ec1b24fb1430035687bb28110c74e</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Incumbent Name</sys_name>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Legal Name</sys_name>
         <sys_package display_value="Contractor Requisition" source="x_162936_contr_req">3105d83a4ffd030035687bb28110c7fe</sys_package>
         <sys_policy/>
         <sys_scope display_value="Contractor Requisition">3105d83a4ffd030035687bb28110c7fe</sys_scope>
         <sys_update_name>sys_dictionary_x_162936_contr_req_approval_for_position_incumbent_name</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-17 20:55:30</sys_updated_on>
+        <sys_updated_by>kmeier1</sys_updated_by>
+        <sys_updated_on>2017-11-17 07:06:00</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

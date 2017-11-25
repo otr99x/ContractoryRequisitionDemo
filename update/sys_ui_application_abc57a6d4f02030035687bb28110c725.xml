@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_application">
+    <sys_ui_application action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <hint/>
+        <name>Contractor Resourcing</name>
+        <order/>
+        <roles>x_162936_contr_req.contractor_requisition_user</roles>
+        <sys_class_name>sys_ui_application</sys_class_name>
+        <sys_created_by>Jamie.Turner</sys_created_by>
+        <sys_created_on>2017-10-26 17:24:37</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>abc57a6d4f02030035687bb28110c725</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Contractor Resourcing</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Contractor Requisition" source="x_162936_contr_req">3105d83a4ffd030035687bb28110c7fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contractor Requisition">3105d83a4ffd030035687bb28110c7fe</sys_scope>
+        <sys_update_name>sys_ui_application_abc57a6d4f02030035687bb28110c725</sys_update_name>
+        <sys_updated_by>Jamie.Turner</sys_updated_by>
+        <sys_updated_on>2017-10-26 17:24:37</sys_updated_on>
+    </sys_ui_application>
+</record_update>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>true</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="Uncategorized">c97d83137f4432005f58108c3ffa917a</category>
+        <collection>x_162936_contr_req_contractor_requisition</collection>
+        <condition table="x_162936_contr_req_contractor_requisition">state=40^job_type=contractor^EQ<item endquery="false" field="state" goto="false" newquery="false" operator="=" or="false" value="40"/>
+            <item endquery="false" field="job_type" goto="false" newquery="false" operator="=" or="false" value="contractor"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <description>This email is sent to Contractor Management after a Position has been approved.</description>
+        <event_name>approval.cancelled</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>engine</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p>Please see the details below for a new position that has been approved.</p>
+<div>Description of position: &lt;appears to come from Scope of Work&gt;</div>
+<div>Type of New Hire: ${short_description}</div>
+<div>Title: ${job_title}</div>
+<div>In-Pocket Rate Range:&nbsp;</div>
+<div>Bill Rate Range -&nbsp;</div>
+<div>Contract Term: ${mail_script:FormatContractDateRange}</div>
+<div>Experience level of original resource: ${job_family.job_family_level}</div>
+<div>Reports to: ${reports_to.name}</div>
+<div>Timesheet Approval: ${timesheet_approval.name}</div>
+<p>&nbsp;</p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>Send Cntr REQ Email to Contract Mgmt</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups name="Contract Management">c051976d4f42030035687bb28110c7ee</recipient_groups>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>New Contractor Resource</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>kmeier1</sys_created_by>
+        <sys_created_on>2017-10-26 19:27:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5bc0936d4f42030035687bb28110c72a</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Send Cntr REQ Email to Contract Mgmt</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Contractor Requisition" source="x_162936_contr_req">3105d83a4ffd030035687bb28110c7fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contractor Requisition">3105d83a4ffd030035687bb28110c7fe</sys_scope>
+        <sys_update_name>sysevent_email_action_5bc0936d4f42030035687bb28110c72a</sys_update_name>
+        <sys_updated_by>kmeier1</sys_updated_by>
+        <sys_updated_on>2017-11-06 19:16:16</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences">7ed0481f3b0b2200c869c2c703efc487</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

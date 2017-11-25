@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_instance_link">
+    <sp_instance_link action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <class_name/>
+        <color>primary</color>
+        <css/>
+        <glyph>eye</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category display_value="Policies">5a7b2552ff0131009b20ffffffffffb1</kb_category>
+        <kb_topic/>
+        <order>0</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description>look for answers to your questions about corporate processes and policies</short_description>
+        <size>md</size>
+        <sp_column display_value="2">121fc4344fce830035687bb28110c7a2</sp_column>
+        <sp_page display_value="kb_view2">26c2e030d7201200a9addd173e24d437</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-10-23 21:39:15</sys_created_on>
+        <sys_id>485390b44fce830035687bb28110c76e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>knowledge base</sys_name>
+        <sys_package display_value="Contractor Requisition" source="x_162936_contr_req">3105d83a4ffd030035687bb28110c7fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contractor Requisition">3105d83a4ffd030035687bb28110c7fe</sys_scope>
+        <sys_update_name>sp_instance_link_485390b44fce830035687bb28110c76e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2017-10-23 21:53:44</sys_updated_on>
+        <title>knowledge base</title>
+        <type>kb_category</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "Color Box",
+		"displayValue": "Color Box"
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="delete_multiple" query="documentkey=485390b44fce830035687bb28110c76e"/>
+</record_update>

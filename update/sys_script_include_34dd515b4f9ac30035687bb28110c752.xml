@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_162936_contr_req.genDoc_Ajax</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>genDoc_Ajax</name>
+        <script><![CDATA[var genDoc_Ajax = Class.create();
+genDoc_Ajax.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+	
+	getDocumentBody : function() {
+		var result = '';
+		var reset = this.getParameter('sysparm_reset');
+		var templateTable = this.getParameter('sysparm_templateTable');
+		var templateName = this.getParameter('sysparm_templateName');
+		var sourceID = this.getParameter('sysparm_sourceID');
+		var sourceTable = this.getParameter('sysparm_sourceTable');
+		
+		if(reset){
+			var gr = new GlideRecord("draft_document");
+			gr.addQuery('table', sourceTable);
+			gr.addQuery('document', sourceID);
+			gr.addQuery('user', gs.getUserID());
+			gr.addActiveQuery();
+			gr.query();
+			while(gr.next()){
+				gr.active = false;
+				gr.update();
+			}
+		}
+			
+			var genDoc = new GeneralDocForm({tableId : sourceID,
+			generalDebug : null,
+			mode : 'pdf' ,
+			targetTable : sourceTable,
+			targetId : sourceID,
+			templateTable : templateTable,
+			template : templateName
+		});
+		
+		return genDoc.body;
+	},
+	
+	setDocumentBody : function() {
+		
+		var documentBody = this.getParameter('sysparm_documentBody') + '';
+		var tableName = this.getParameter('sysparm_table_name') + '';
+		var tableId = this.getParameter('sysparm_table_id') + '';
+		var targetTable = this.getParameter('sysparm_targetTable') + '';
+		var targetId = this.getParameter('sysparm_targetId') + '';
+		
+		if (documentBody.trim() != '') {
+			var gr = new GlideRecord("draft_document");
+			gr.addQuery('table', tableName);
+			gr.addQuery('document', tableId);
+			gr.addQuery('user', gs.getUserID());
+			gr.addActiveQuery();
+			gr.query();
+			
+			if (gr.next() && gr.canWrite()){
+				gr.setValue('body', documentBody);
+				gr.update();
+			} else {
+				gr.initialize();
+				
+				gr.table = tableName;
+				gr.document = tableId;
+				gr.body = documentBody;
+				gr.target_table = targetTable;
+				gr.target_id = targetId;
+				gr.user = gs.getUserID();
+				
+				gr.insert();
+			}
+		}
+		return;
+	},
+	
+	
+	type: 'genDoc_Ajax'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>kmeier1</sys_created_by>
+        <sys_created_on>2017-11-13 07:45:50</sys_created_on>
+        <sys_id>34dd515b4f9ac30035687bb28110c752</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>genDoc_Ajax</sys_name>
+        <sys_package display_value="Contractor Requisition" source="x_162936_contr_req">3105d83a4ffd030035687bb28110c7fe</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Contractor Requisition">3105d83a4ffd030035687bb28110c7fe</sys_scope>
+        <sys_update_name>sys_script_include_34dd515b4f9ac30035687bb28110c752</sys_update_name>
+        <sys_updated_by>kmeier1</sys_updated_by>
+        <sys_updated_on>2017-11-13 07:45:50</sys_updated_on>
+    </sys_script_include>
+</record_update>

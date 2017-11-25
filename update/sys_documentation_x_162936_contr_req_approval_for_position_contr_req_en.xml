@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="contr_req" label="Contractor Req" language="en" table="x_162936_contr_req_approval_for_position">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>contr_req</element>
+            <help/>
+            <hint/>
+            <label>Contractor Req</label>
+            <language>en</language>
+            <name>x_162936_contr_req_approval_for_position</name>
+            <plural>Contractor Reqs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Jamie.Turner</sys_created_by>
+            <sys_created_on>2017-10-20 16:38:14</sys_created_on>
+            <sys_id>69a1bb234ff1430035687bb28110c7a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Contractor Req</sys_name>
+            <sys_package display_value="Contractor Requisition" source="x_162936_contr_req">3105d83a4ffd030035687bb28110c7fe</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Contractor Requisition">3105d83a4ffd030035687bb28110c7fe</sys_scope>
+            <sys_update_name>sys_documentation_x_162936_contr_req_approval_for_position_contr_req_en</sys_update_name>
+            <sys_updated_by>Jamie.Turner</sys_updated_by>
+            <sys_updated_on>2017-10-20 16:38:14</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

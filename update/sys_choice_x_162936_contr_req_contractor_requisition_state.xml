@@ -15,48 +15,10 @@
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>eceaa0724f71430035687bb28110c7e6</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-10-17 21:31:26</sys_updated_on>
-            <value>1</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Awaiting Approval</label>
-            <language>en</language>
-            <name>x_162936_contr_req_contractor_requisition</name>
-            <sequence>2</sequence>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-10-17 21:24:34</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>ae6655b64fb1430035687bb28110c722</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-10-17 21:32:07</sys_updated_on>
-            <value>2</value>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>state</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Information Clarificiation</label>
-            <language>en</language>
-            <name>x_162936_contr_req_contractor_requisition</name>
-            <sequence>3</sequence>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-10-17 21:25:23</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_id>ea96d5764fb1430035687bb28110c733</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-10-17 21:25:23</sys_updated_on>
-            <value>3</value>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Jamie.Turner</sys_updated_by>
+            <sys_updated_on>2017-11-03 19:36:07</sys_updated_on>
+            <value>10</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -66,35 +28,111 @@
             <label>Position Approved</label>
             <language>en</language>
             <name>x_162936_contr_req_contractor_requisition</name>
-            <sequence>4</sequence>
+            <sequence>2</sequence>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2017-10-17 21:32:31</sys_created_on>
+            <sys_created_on>2017-10-17 21:24:34</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>cb385db64fb1430035687bb28110c784</sys_id>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-10-17 21:32:31</sys_updated_on>
-            <value>4</value>
+            <sys_id>ae6655b64fb1430035687bb28110c722</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Jamie.Turner</sys_updated_by>
+            <sys_updated_on>2017-11-03 19:36:12</sys_updated_on>
+            <value>20</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
             <element>state</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Offer Accepted</label>
+            <label>Interviewing</label>
             <language>en</language>
             <name>x_162936_contr_req_contractor_requisition</name>
-            <sequence>20</sequence>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-17 21:25:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ea96d5764fb1430035687bb28110c733</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Jamie.Turner</sys_updated_by>
+            <sys_updated_on>2017-11-03 19:36:15</sys_updated_on>
+            <value>30</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Candidate Search</label>
+            <language>en</language>
+            <name>x_162936_contr_req_contractor_requisition</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2017-10-17 21:32:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cb385db64fb1430035687bb28110c784</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Jamie.Turner</sys_updated_by>
+            <sys_updated_on>2017-11-03 19:36:18</sys_updated_on>
+            <value>40</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Rate Increase</label>
+            <language>en</language>
+            <name>x_162936_contr_req_contractor_requisition</name>
+            <sequence>5</sequence>
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2017-10-17 21:13:41</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
             <sys_id>8be3d5764fb1430035687bb28110c72b</sys_id>
-            <sys_mod_count>3</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2017-10-17 21:31:48</sys_updated_on>
-            <value>10</value>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>Jamie.Turner</sys_updated_by>
+            <sys_updated_on>2017-11-03 19:36:22</sys_updated_on>
+            <value>50</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AFP</label>
+            <language>en</language>
+            <name>x_162936_contr_req_contractor_requisition</name>
+            <sequence>6</sequence>
+            <sys_created_by>Jamie.Turner</sys_created_by>
+            <sys_created_on>2017-11-03 05:52:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4934e50c4f92030035687bb28110c78a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Jamie.Turner</sys_updated_by>
+            <sys_updated_on>2017-11-03 19:36:25</sys_updated_on>
+            <value>60</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Canceled</label>
+            <language>en</language>
+            <name>x_162936_contr_req_contractor_requisition</name>
+            <sequence>10</sequence>
+            <sys_created_by>Jamie.Turner</sys_created_by>
+            <sys_created_on>2017-11-03 05:53:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cf54a58c4f92030035687bb28110c7f2</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Jamie.Turner</sys_updated_by>
+            <sys_updated_on>2017-11-03 19:36:29</sys_updated_on>
+            <value>100</value>
         </sys_choice>
         <sys_choice_set action="INSERT_OR_UPDATE">
             <element>state</element>

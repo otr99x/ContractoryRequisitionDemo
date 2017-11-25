@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>true</action_update>
+        <active>false</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_162936_contr_req_contractor_requisition</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition table="x_162936_contr_req_contractor_requisition">max_rateISNOTEMPTYjavascript:global.getCurrencyFilter('x_162936_contr_req_contractor_requisition','max_rate', 'USD;USD')^job_familyISNOTEMPTY^max_rateVALCHANGESjavascript:global.getCurrencyFilter('x_162936_contr_req_contractor_requisition','max_rate', 'USD;USD')^ORjob_familyVALCHANGES^EQ<item endquery="false" field="max_rate" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value="javascript:global.getCurrencyFilter('x_162936_contr_req_contractor_requisition','max_rate', 'USD;USD')"/>
+            <item endquery="false" field="job_family" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="false" field="max_rate" goto="false" newquery="false" operator="VALCHANGES" or="false" value="javascript:global.getCurrencyFilter('x_162936_contr_req_contractor_requisition','max_rate', 'USD;USD')"/>
+            <item endquery="false" field="job_family" goto="false" newquery="false" operator="VALCHANGES" or="true" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter_condition>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Check Job Rate</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+	
+	var askRate = parseFloat(current.max_rate);
+	var jobFam = new GlideRecord('x_162936_contr_req_pay_rate');
+	jobFam.get('sys_id', current.job_family);
+	var setRate = parseFloat(jobFam.contractor_max_rate);
+		
+	if (askRate > setRate) {
+		current.high_rate.setValue('true');
+	} else {
+		current.high_rate.setValue('false');
+	}
+
+	current.update();
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Jamie.Turner</sys_created_by>
+        <sys_created_on>2017-10-27 03:15:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>889830314f46030035687bb28110c752</sys_id>
+        <sys_mod_count>39</sys_mod_count>
+        <sys_name>Check Job Rate</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Contractor Requisition" source="x_162936_contr_req">3105d83a4ffd030035687bb28110c7fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contractor Requisition">3105d83a4ffd030035687bb28110c7fe</sys_scope>
+        <sys_update_name>sys_script_889830314f46030035687bb28110c752</sys_update_name>
+        <sys_updated_by>Jamie.Turner</sys_updated_by>
+        <sys_updated_on>2017-10-27 19:04:10</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=889830314f46030035687bb28110c752"/>
+</record_update>

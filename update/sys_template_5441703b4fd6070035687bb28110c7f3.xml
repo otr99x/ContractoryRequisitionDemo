@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_template">
+    <sys_template action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <global>false</global>
+        <group/>
+        <link_element/>
+        <name>TEMPLATE8</name>
+        <next/>
+        <next_child/>
+        <roles/>
+        <short_description>nbhgjjkghjhgjgh</short_description>
+        <show_on_template_bar>true</show_on_template_bar>
+        <stand_alone>false</stand_alone>
+        <sys_class_name>sys_template</sys_class_name>
+        <sys_created_by>kmeier1</sys_created_by>
+        <sys_created_on>2017-11-14 17:47:38</sys_created_on>
+        <sys_id>5441703b4fd6070035687bb28110c7f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TEMPLATE8</sys_name>
+        <sys_package display_value="Contractor Requisition" source="x_162936_contr_req">3105d83a4ffd030035687bb28110c7fe</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Contractor Requisition">3105d83a4ffd030035687bb28110c7fe</sys_scope>
+        <sys_update_name>sys_template_5441703b4fd6070035687bb28110c7f3</sys_update_name>
+        <sys_updated_by>kmeier1</sys_updated_by>
+        <sys_updated_on>2017-11-14 17:47:38</sys_updated_on>
+        <table>x_162936_contr_req_contractor_requisition</table>
+        <template/>
+        <user display_value="Kevin Meier">79aeedb24ff1430035687bb28110c77c</user>
+        <view/>
+    </sys_template>
+</record_update>

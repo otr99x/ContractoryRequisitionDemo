@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Pay Rate" max_length="40" name="x_162936_contr_req_pay_rate" type="collection">
+        <element label="Contractor Max Rate" max_length="20" name="contractor_max_rate" type="currency"/>
+        <element label="Contractor Min Rate" max_length="20" name="contractor_min_rate" type="currency"/>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Full Job Family Name" max_length="100" name="full_job_family" read_only="true" type="string"/>
+        <element label="Job Family" max_length="40" name="job_family" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Job Family Level" max_length="40" name="job_family_level" type="string">
+            <choice>
+                <element label="Junior" sequence="1" value="junior"/>
+                <element label="Intermediate" sequence="2" value="intermediate"/>
+                <element label="Senior" sequence="3" value="senior"/>
+                <element label="Senior Specialist" sequence="4" value="sen_specialist"/>
+                <element label="Program Manager" sequence="5" value="prog_mgr"/>
+            </choice>
+        </element>
+    </element>
+</database>

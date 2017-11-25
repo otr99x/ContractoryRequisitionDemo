@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <database>
-    <element audit="true" extends="task" label="Contractor Requisition" max_length="40" name="x_162936_contr_req_contractor_requisition" type="collection">
+    <element audit="true" extends="task" label="Contractor Requisition" max_length="40" name="x_162936_contr_req_contractor_requisition" sizeclass="32" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Contract Duration" max_length="40" name="contract_duration" read_only="true" type="string"/>
+        <element label="Position ID" max_length="32" name="detail_of_position" reference="x_162936_contr_req_approval_for_position" type="reference"/>
         <element label="Target End Date" max_length="40" name="end_date" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Key Hiring/Evaluation Criteria &amp; Mandatory Qualifications" max_length="10000" name="eval_criteria" type="string"/>
-        <element label="Extension Duration (Month)" max_length="40" name="extension_duration" type="integer"/>
+        <element label="Extension Duration (Months)" max_length="40" name="extension_duration" type="integer"/>
         <element label="Extension Possible?" max_length="40" name="extension_possible" type="boolean"/>
         <element label="Flexible on Rate" max_length="40" name="flexible_rate" type="boolean"/>
         <element label="Flexible on Start Date?" max_length="40" name="flexible_start" type="boolean"/>
         <element label="is OPEX" max_length="40" name="is_opex" type="boolean"/>
-        <element attributes="edge_encryption_enabled=true" label="Job Title" max_length="40" name="job_title" type="string"/>
+        <element label="IT Job Function" max_length="32" name="job_family" reference="x_162936_contr_req_pay_rate" type="reference"/>
+        <element label="IT Hiring Position Title" max_length="32" name="job_title" reference="x_162936_contr_req_job_title" reference_qual="javascript:&quot;job_family=&quot; + current.job_family" type="reference" use_reference_qualifier="advanced"/>
+        <element choice="1" default="contractor" label="Workforce Type" mandatory="true" max_length="40" name="job_type" type="choice">
+            <choice>
+                <element label="Contractor" sequence="0" value="contractor"/>
+                <element label="Service Provider" sequence="1" value="service_provider"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Level" max_length="40" name="level" type="string"/>
-        <element attributes="omit_sys_original=true" default="0" label="Maximum Accepted Rate" max_length="20" name="max_rate" type="currency"/>
+        <element attributes="omit_sys_original=true" default="0" label="Max Rate" max_length="20" name="max_rate" type="currency"/>
+        <element default="0" label="Min Rate" max_length="20" name="minimum_rate" type="currency"/>
         <element attributes="edge_encryption_enabled=true" label="Nice to Have Skills/Experience" max_length="10000" name="nice_skills" type="string"/>
         <element default="1" label="Number of Openings" max_length="40" name="num_openings" type="integer"/>
+        <element label="PDF Sent" max_length="40" name="pdf_sent" type="boolean"/>
+        <element label="Rate Comments" max_length="4000" name="rate_comments" type="string"/>
         <element label="Reports To" max_length="32" name="reports_to" reference="sys_user" type="reference"/>
         <element label="Resume Submissions Due Date" max_length="40" name="resume_due_date" type="glide_date"/>
         <element attributes="edge_encryption_enabled=true" label="Scope of Work" max_length="10000" name="scope_of_work" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Technical Skills/Business Knowledge Needed" max_length="10000" name="skills" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Skills and Responsibilities" max_length="10000" name="skills_responsibility" type="string"/>
         <element label="Target Start Date" max_length="40" name="start_date" type="glide_date"/>
-        <element attributes="omit_sys_original=true" label="Target Rate" max_length="20" name="target_rate" type="currency"/>
+        <element attributes="omit_sys_original=true" hint="This is a hint" label="Target Rate" max_length="20" name="target_rate" type="currency"/>
         <element label="Timesheet Approval" max_length="32" name="timesheet_approval" reference="sys_user" type="reference"/>
+        <element label="Message to Contract Management" max_length="65536" name="u_cm_message" type="html"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Job Location" max_length="40" name="u_job_location" type="string">
+            <choice>
+                <element label="Onsite" sequence="0" value="onsite"/>
+                <element label="Offsite" sequence="1" value="offsite"/>
+            </choice>
+        </element>
+        <element label="Use PSOW" max_length="40" name="u_psow" type="boolean"/>
     </element>
 </database>

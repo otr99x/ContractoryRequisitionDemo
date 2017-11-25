@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Job Title" max_length="40" name="x_162936_contr_req_job_title" type="collection">
+        <element label="Job Family" max_length="32" name="job_family" reference="x_162936_contr_req_pay_rate" type="reference"/>
+        <element display="true" label="Job Title Name" max_length="40" name="job_title_name" type="string"/>
+        <index name="index">
+            <element name="job_family"/>
+        </index>
+    </element>
+</database>

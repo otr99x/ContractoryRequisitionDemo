@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Imp Tmpl X 162936 Contr Req Pay Rate" max_length="40" name="u_imp_tmpl_x_162936_contr_req_pay_rate" type="collection">
+        <element attributes="import_attribute_name=Contractor Max Rate" label="Contractor Max Rate" max_length="20" name="u_contractor_max_rate" type="integer"/>
+        <element attributes="import_attribute_name=Contractor Min Rate" label="Contractor Min Rate" max_length="20" name="u_contractor_min_rate" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Full Job Family Name" max_length="40" name="u_full_job_family_name" type="string"/>
+        <element attributes="import_attribute_name=Job Family,edge_encryption_enabled=true" label="Job Family" max_length="40" name="u_job_family" type="string"/>
+        <element attributes="import_attribute_name=Job Family Level,edge_encryption_enabled=true" label="Job Family Level" max_length="40" name="u_job_family_level" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Sys ID" max_length="40" name="u_sys_id" type="string"/>
+    </element>
+</database>

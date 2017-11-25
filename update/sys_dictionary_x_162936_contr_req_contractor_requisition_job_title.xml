@@ -4,13 +4,13 @@
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>edge_encryption_enabled=true</attributes>
+        <attributes/>
         <audit>false</audit>
         <calculation/>
-        <choice>0</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Job Title</column_label>
+        <column_label>IT Hiring Position Title</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -26,19 +26,19 @@
         <element>job_title</element>
         <element_reference>false</element_reference>
         <foreign_database/>
-        <internal_type display_value="String">string</internal_type>
+        <internal_type display_value="Reference">reference</internal_type>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
+        <max_length>32</max_length>
         <name>x_162936_contr_req_contractor_requisition</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="x_162936_contr_req_job_title">x_162936_contr_req_job_title</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
-        <reference_qual/>
+        <reference_qual>javascript:"job_family=" + current.job_family</reference_qual>
         <reference_qual_condition/>
         <reference_type/>
         <sizeclass/>
@@ -46,22 +46,22 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2017-10-17 17:53:59</sys_created_on>
-        <sys_id>b536e8be4f31430035687bb28110c7d1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Job Title</sys_name>
+        <sys_created_on>2017-10-31 22:08:20</sys_created_on>
+        <sys_id>94b661174fc2030035687bb28110c783</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>IT Hiring Position Title</sys_name>
         <sys_package display_value="Contractor Requisition" source="x_162936_contr_req">3105d83a4ffd030035687bb28110c7fe</sys_package>
         <sys_policy/>
         <sys_scope display_value="Contractor Requisition">3105d83a4ffd030035687bb28110c7fe</sys_scope>
         <sys_update_name>sys_dictionary_x_162936_contr_req_contractor_requisition_job_title</sys_update_name>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2017-10-17 17:53:59</sys_updated_on>
+        <sys_updated_by>kmeier1</sys_updated_by>
+        <sys_updated_on>2017-11-17 07:03:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
         <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
+        <use_reference_qualifier>advanced</use_reference_qualifier>
         <virtual>false</virtual>
         <widget/>
         <write_roles/>
